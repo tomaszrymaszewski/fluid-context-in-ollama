@@ -22,7 +22,7 @@ def ai(name: str, mood: str = "interested", model: str = "llama3.2", ans_length:
 
     # Get weather (only activated when "temperature" or "weather" included in input because of API credits)
     def get_weather():
-        api_key = 'e54ae857b9a4036e7444de2230356239'
+        api_key = 'YOUR_API_KEY_HERE'
         url = f'http://api.openweathermap.org/data/2.5/weather?q={city},{country}&appid={api_key}&units=metric'
         response = requests.get(url)
         data = response.json()
